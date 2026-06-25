@@ -1,0 +1,209 @@
+[
+  {
+    "rule_id": "CA-001",
+    "jurisdiction": "California",
+    "clause_type": "non_compete",
+    "rule_text": "Non-compete agreements are void in California under Business and Professions Code Section 16600, with narrow exceptions for sale of business or dissolution of partnership.",
+    "statute_reference": "Cal. Bus. & Prof. Code § 16600",
+    "case_law_reference": "Edwards v. Arthur Andersen LLP (2008) 44 Cal.4th 937",
+    "enforceability": "void"
+  },
+  {
+    "rule_id": "CA-002",
+    "jurisdiction": "California",
+    "clause_type": "habitability",
+    "rule_text": "Tenants cannot contractually waive the right to a habitable dwelling. Any lease clause purporting to waive habitability rights is void as against public policy.",
+    "statute_reference": "Cal. Civ. Code § 1942.5",
+    "case_law_reference": null,
+    "enforceability": "void"
+  },
+  {
+    "rule_id": "CA-003",
+    "jurisdiction": "California",
+    "clause_type": "arbitration",
+    "rule_text": "Consumer arbitration agreements must comply with JAMS or AAA rules, cannot waive public injunctive relief, and are subject to unconscionability review. Class action waivers paired with arbitration may be unenforceable.",
+    "statute_reference": "Cal. Civ. Code § 1751; CCP § 1281.2",
+    "case_law_reference": "McGill v. Citibank N.A. (2017) 2 Cal.5th 945",
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "CA-004",
+    "jurisdiction": "California",
+    "clause_type": "auto_renewal",
+    "rule_text": "Automatic renewal clauses in consumer contracts must clearly present the terms before purchase, require affirmative consent, and provide a simple cancellation mechanism. Non-compliant clauses are void.",
+    "statute_reference": "Cal. Bus. & Prof. Code § 17600-17606",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "CA-005",
+    "jurisdiction": "California",
+    "clause_type": "termination",
+    "rule_text": "At-will employment in California cannot be contracted away by implied promises of continued employment. However, implied-in-fact contracts can arise from employer conduct, policy manuals, or long service.",
+    "statute_reference": "Cal. Lab. Code § 2922",
+    "case_law_reference": "Foley v. Interactive Data Corp. (1988) 47 Cal.3d 654",
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "CA-006",
+    "jurisdiction": "California",
+    "clause_type": "liability",
+    "rule_text": "Liability waivers for future gross negligence or intentional misconduct are void in California. Waivers for ordinary negligence are generally enforceable if conspicuous and unambiguous.",
+    "statute_reference": "Cal. Civ. Code § 1668",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "CA-007",
+    "jurisdiction": "California",
+    "clause_type": "confidentiality",
+    "rule_text": "NDAs cannot prohibit disclosure of information about unlawful acts in the workplace, including harassment, discrimination, or retaliation. Such prohibitions are void.",
+    "statute_reference": "Cal. Civ. Code § 1001; Cal. Code Civ. Proc. § 1002.5",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "NY-001",
+    "jurisdiction": "New York",
+    "clause_type": "non_compete",
+    "rule_text": "New York applies a reasonableness test to non-competes based on time, geography, and scope. Overbroad agreements will be partially enforced via blue-penciling rather than voided entirely.",
+    "statute_reference": null,
+    "case_law_reference": "BDO Seidman v. Hirshberg (1999) 93 N.Y.2d 382",
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "NY-002",
+    "jurisdiction": "New York",
+    "clause_type": "habitability",
+    "rule_text": "New York's warranty of habitability is non-waivable. Any lease clause attempting to waive it is void. Landlords cannot contract out of repair obligations for conditions dangerous to life, health, or safety.",
+    "statute_reference": "NY Real Prop. Law § 235-b",
+    "case_law_reference": null,
+    "enforceability": "void"
+  },
+  {
+    "rule_id": "NY-003",
+    "jurisdiction": "New York",
+    "clause_type": "arbitration",
+    "rule_text": "Arbitration agreements in New York are broadly enforceable under the FAA and CPLR Article 75. However, they cannot strip courts of power to issue injunctive relief in IP or trade secret cases.",
+    "statute_reference": "NY CPLR § 7501",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "NY-004",
+    "jurisdiction": "New York",
+    "clause_type": "indemnification",
+    "rule_text": "Construction contracts cannot require indemnification for indemnitee's own negligence. Anti-indemnification statute applies broadly to construction projects.",
+    "statute_reference": "NY Gen. Oblig. Law § 5-322.1",
+    "case_law_reference": null,
+    "enforceability": "void"
+  },
+  {
+    "rule_id": "TX-001",
+    "jurisdiction": "Texas",
+    "clause_type": "non_compete",
+    "rule_text": "Non-compete agreements in Texas are enforceable if ancillary to an otherwise enforceable agreement, supported by consideration (such as trade secrets or specialized training), and reasonable in scope, geography, and duration.",
+    "statute_reference": "Tex. Bus. & Com. Code § 15.50",
+    "case_law_reference": "Marsh USA Inc. v. Cook (2011) 354 S.W.3d 764",
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "TX-002",
+    "jurisdiction": "Texas",
+    "clause_type": "liability",
+    "rule_text": "Texas allows limitation of liability clauses but voids them for willful misconduct, fraud, or gross negligence. Consumer contracts with unconscionable liability waivers may be set aside by courts.",
+    "statute_reference": "Tex. Bus. & Com. Code § 17.45",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "TX-003",
+    "jurisdiction": "Texas",
+    "clause_type": "arbitration",
+    "rule_text": "Arbitration clauses in Texas are generally enforceable under the TAA and FAA. However, class arbitration waivers in consumer contracts are subject to unconscionability challenge.",
+    "statute_reference": "Tex. Civ. Prac. & Rem. Code § 171.001",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "FED-001",
+    "jurisdiction": "Federal",
+    "clause_type": "arbitration",
+    "rule_text": "The Federal Arbitration Act (FAA) broadly preempts state laws disfavoring arbitration. Predispute arbitration clauses in employment contracts for transportation workers are exempt from the FAA.",
+    "statute_reference": "9 U.S.C. § 1 et seq.",
+    "case_law_reference": "Epic Systems Corp. v. Lewis (2018) 584 U.S. 497",
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "FED-002",
+    "jurisdiction": "Federal",
+    "clause_type": "non_compete",
+    "rule_text": "The FTC's 2024 Non-Compete Rule banning most non-competes was blocked by courts. Federal law currently does not prohibit non-competes, leaving enforcement to state law.",
+    "statute_reference": "16 C.F.R. Part 910 (stayed)",
+    "case_law_reference": "Ryan LLC v. FTC (N.D. Tex. 2024)",
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "FED-003",
+    "jurisdiction": "Federal",
+    "clause_type": "confidentiality",
+    "rule_text": "NDAs cannot restrict employees from reporting securities violations or cooperating with the SEC under the Dodd-Frank whistleblower program. Such clauses violate federal law.",
+    "statute_reference": "15 U.S.C. § 78u-6(h); 17 C.F.R. § 240.21F-17",
+    "case_law_reference": null,
+    "enforceability": "void"
+  },
+  {
+    "rule_id": "FED-004",
+    "jurisdiction": "Federal",
+    "clause_type": "warranty",
+    "rule_text": "Implied warranties of merchantability and fitness for a particular purpose can be disclaimed in commercial contracts under the UCC if done conspicuously. Consumer product warranty disclaimers are regulated by the Magnuson-Moss Act.",
+    "statute_reference": "15 U.S.C. § 2301 et seq.; UCC § 2-316",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "EU-001",
+    "jurisdiction": "EU",
+    "clause_type": "non_compete",
+    "rule_text": "Post-termination non-compete clauses in the EU must be compensated during the restriction period, proportionate in scope and geography, and limited in duration (typically max 2 years). Uncompensated clauses are generally void.",
+    "statute_reference": "EU Directive 2016/943 (Trade Secrets)",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "EU-002",
+    "jurisdiction": "EU",
+    "clause_type": "terms_of_service",
+    "rule_text": "Under the EU Unfair Contract Terms Directive, consumer terms creating a significant imbalance between parties' rights and obligations are void. This includes unilateral modification clauses without adequate notice.",
+    "statute_reference": "Council Directive 93/13/EEC",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "EU-003",
+    "jurisdiction": "EU",
+    "clause_type": "arbitration",
+    "rule_text": "Mandatory arbitration clauses in consumer contracts are generally void under the EU Unfair Terms Directive as they deprive consumers of access to courts. B2B arbitration clauses are broadly valid.",
+    "statute_reference": "Council Directive 93/13/EEC Art. 3; Rome I Regulation",
+    "case_law_reference": "Océano Grupo Editorial SA v. Rocío Murciano Quintero (C-240/98)",
+    "enforceability": "void"
+  },
+  {
+    "rule_id": "EU-004",
+    "jurisdiction": "EU",
+    "clause_type": "confidentiality",
+    "rule_text": "NDAs cannot prevent employees from reporting breaches to relevant authorities or courts. EU Whistleblower Directive mandates protection for reporters of violations of EU law.",
+    "statute_reference": "EU Directive 2019/1937",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  },
+  {
+    "rule_id": "EU-005",
+    "jurisdiction": "EU",
+    "clause_type": "auto_renewal",
+    "rule_text": "Auto-renewal clauses in consumer contracts must be transparent, allow easy cancellation, and may require active re-consent under certain member state implementations. Opaque auto-renewal clauses are unfair under EU consumer law.",
+    "statute_reference": "Council Directive 93/13/EEC; Directive 2011/83/EU",
+    "case_law_reference": null,
+    "enforceability": "conditional"
+  }
+]

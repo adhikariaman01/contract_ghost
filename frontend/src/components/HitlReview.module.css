@@ -1,0 +1,373 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 16px;
+  animation: fadeIn 0.2s ease both;
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-modal);
+  width: 100%;
+  max-width: 880px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.25s ease both;
+}
+
+/* ─── Header ─────────────────────────────────────────────────────────────── */
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.modalHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.modalTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.modalProgress {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.closeBtn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: var(--bg-secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all var(--transition);
+}
+.closeBtn:hover { background: var(--border); color: var(--text-primary); }
+
+/* ─── Progress Bar ───────────────────────────────────────────────────────── */
+.progressBar {
+  height: 3px;
+  background: var(--bg-secondary);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--accent-primary);
+  transition: width var(--transition-slow);
+  border-radius: 0 3px 3px 0;
+}
+
+/* ─── Content Grid ───────────────────────────────────────────────────────── */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 640px) {
+  .content { grid-template-columns: 1fr; }
+}
+
+.left {
+  padding: 24px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.right {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+/* ─── Clause ─────────────────────────────────────────────────────────────── */
+.clauseMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.clauseTypeBadge {
+  display: inline-block;
+  padding: 3px 10px;
+  background: var(--accent-primary-light);
+  color: var(--accent-primary);
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.severityBadge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 600;
+}
+.sev_critical { background: var(--accent-danger-light); color: #8B3A3A; }
+.sev_warning { background: var(--accent-warning-light); color: #7A5A20; }
+.sev_info { background: var(--bg-secondary); color: var(--text-muted); }
+
+.lineRef {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.clauseText {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  max-height: 220px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ─── Analysis ───────────────────────────────────────────────────────────── */
+.ghostBadge {
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 600;
+}
+.ghost_ghost { background: var(--accent-danger-light); color: #8B3A3A; border: 1px solid var(--accent-danger); }
+.ghost_suspicious { background: var(--accent-warning-light); color: #7A5A20; border: 1px solid var(--accent-warning); }
+.ghost_clean { background: var(--accent-success-light); color: #4A7A5A; border: 1px solid var(--accent-success); }
+
+.explanation {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.ruleBox {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+
+.ruleTitle {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.ruleText {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.statute {
+  font-size: 11px;
+  color: var(--accent-primary);
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.revisionBox {
+  background: #F0F8F4;
+  border: 1px solid var(--accent-success);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+
+.revisionTitle {
+  font-size: 11px;
+  font-weight: 700;
+  color: #4A7A5A;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.revisionText {
+  font-size: 12px;
+  color: #3A6A4A;
+  line-height: 1.6;
+}
+
+.confidence {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.confidenceBar {
+  flex: 1;
+  height: 5px;
+  background: var(--bg-secondary);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.confidenceFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width var(--transition-slow);
+}
+
+.confidenceNum {
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 28px;
+}
+
+/* ─── Verdict Section ────────────────────────────────────────────────────── */
+.verdictSection {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.verdictLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.verdictBtns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .verdictBtns { grid-template-columns: 1fr; }
+}
+
+.verdictBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.verdictGhost {
+  background: var(--accent-danger-light);
+  color: #8B3A3A;
+  border-color: transparent;
+}
+.verdictGhost:hover { border-color: var(--accent-danger); }
+.verdictGhost.verdictSelected { background: var(--accent-danger); color: white; border-color: var(--accent-danger); }
+
+.verdictClean {
+  background: var(--accent-success-light);
+  color: #4A7A5A;
+  border-color: transparent;
+}
+.verdictClean:hover { border-color: var(--accent-success); }
+.verdictClean.verdictSelected { background: var(--accent-success); color: white; border-color: var(--accent-success); }
+
+.verdictUnsure {
+  background: var(--accent-warning-light);
+  color: #7A5A20;
+  border-color: transparent;
+}
+.verdictUnsure:hover { border-color: var(--accent-warning); }
+.verdictUnsure.verdictSelected { background: var(--accent-warning); color: white; border-color: var(--accent-warning); }
+
+.notesField {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  resize: none;
+  outline: none;
+  transition: border-color var(--transition);
+}
+.notesField:focus { border-color: var(--border-focus); }
+.notesField::placeholder { color: var(--text-muted); }
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 13px 24px;
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.submitBtn:hover:not(:disabled) { background: var(--accent-primary-hover); }
+.submitBtn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
