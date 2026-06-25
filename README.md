@@ -147,13 +147,11 @@ Watch the two AI agents work in real time. The left panel shows each agent's sta
 
 ---
 
-### Human-in-the-Loop review
+### Report
 
 When the Evaluator Agent flags a clause with low confidence or critical severity, it pauses and surfaces it for your review. You see the original clause text side-by-side with the AI's analysis, matched statute, and suggested revision. Choose **Confirmed Ghost**, **False Positive**, or **Unsure** — your verdict feeds directly back into the final report.
 
-<p align="center">
-  <img src="docs/images/screenshot-hitl.png" alt="Human-in-the-loop review modal" width="780" />
-</p>
+![Alt text describing the image](images/10.png)
 
 ---
 
@@ -161,9 +159,9 @@ When the Evaluator Agent flags a clause with low confidence or critical severity
 
 The report shows an overall risk score (0–100), a plain-language executive summary, and a full sortable clause breakdown. Toggle between **Flagged**, **Clean**, and **All** views. Expand any clause to see the original text, the matched enforceability rule with statute citation, and a concrete suggested revision.
 
-<p align="center">
-  <img src="docs/images/screenshot-report.png" alt="Final report page with risk score and clause breakdown" width="780" />
-</p>
+![Alt text describing the image](images/8.png)
+
+![Alt text describing the image](images/9.png)
 
 > **Adding screenshots:** Place your screenshots at `docs/images/screenshot-home.png`, `screenshot-analysis.png`, `screenshot-hitl.png`, and `screenshot-report.png`. Standard capture size is 1560×980px (@2x), exported at 50% for the README.
 
