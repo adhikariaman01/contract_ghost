@@ -120,13 +120,22 @@ FRONTEND_PORT=5173
 
 ## 📸 Screenshots
 
+### Logs once app is running successfully
+
+![Alt text describing the image](images/1.png)
+
+![Alt text describing the image](images/6.png)
+
 ### Home — Contract upload
 
-Paste any contract, select your jurisdiction and contract type, and hit **Detect Ghost Clauses**. Use **Load sample** to try the demo California lease immediately.
+![Alt text describing the image](images/2.png)
 
-<p align="center">
-  <img src="docs/images/screenshot-home.png" alt="Home screen — contract upload panel" width="780" />
-</p>
+![Alt text describing the image](images/3.png)
+
+![Swagger](images/4.png)
+
+Paste any contract, select your jurisdiction and contract type, and hit **Detect Ghost Clauses**. Use **Load sample** to try the demo California lease immediately.
+![Alt text describing the image](images/5.png)
 
 ---
 
@@ -134,9 +143,7 @@ Paste any contract, select your jurisdiction and contract type, and hit **Detect
 
 Watch the two AI agents work in real time. The left panel shows each agent's status and output summary as it streams in. Stats update live as clauses are extracted and evaluated.
 
-<p align="center">
-  <img src="docs/images/screenshot-analysis.png" alt="Analysis page — live agent pipeline monitor" width="780" />
-</p>
+![Alt text describing the image](images/7.png)
 
 ---
 
@@ -419,7 +426,7 @@ Valid `clause_type` values: `termination` · `liability` · `non_compete` · `ar
 ```
 MIT License
 
-Copyright (c) 2024 [Your Name]
+Copyright (c) 2024 Aman Adhikari
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
